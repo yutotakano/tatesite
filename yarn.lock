@@ -1103,6 +1103,16 @@ h3@^1.15.3:
     ufo "^1.6.1"
     uncrypto "^0.1.3"
 
+hast-util-find-and-replace@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/hast-util-find-and-replace/-/hast-util-find-and-replace-5.0.1.tgz#6dec7224659c2855555a7e4bb6b855a37729a4bc"
+  integrity sha512-S12fTskO3Hf2IGCBWXs1UcXT8GEJ3jmvmPZJctkRwfl3a8jnGi8aFYT8kd2zcEH+VE0qcGgKF0ewt5BPAsfIhw==
+  dependencies:
+    "@types/hast" "^3.0.0"
+    escape-string-regexp "^5.0.0"
+    hast-util-is-element "^3.0.0"
+    unist-util-visit-parents "^6.0.0"
+
 hast-util-from-html@^2.0.0, hast-util-from-html@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/hast-util-from-html/-/hast-util-from-html-2.0.3.tgz#485c74785358beb80c4ba6346299311ac4c49c82"

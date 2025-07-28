@@ -1,18 +1,21 @@
 ---
-
-console.log("test")
-
+import styles from "./index.module.css";
+import * as index from "../content/index.md";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>tatesite preview</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body style="display: flex; flex-direction: column">
+		<h1>tatesite: A demonstration of in-browser vertical text</h1>
+		<div class={styles.verticalContainer} set:html={index.compiledContent()} />
 	</body>
 </html>
