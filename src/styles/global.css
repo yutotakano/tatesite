@@ -32,6 +32,7 @@ a {
 
 h1 {
   word-break: auto-phrase;
+  line-height: 1.5;
 }
 
 body {
