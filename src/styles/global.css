@@ -9,10 +9,11 @@
   margin: 0 auto;
   line-break: strict; /* prevents 禁則処理 */
   column-fill: auto;
-  column-width: var(--column-width); /* this doesn't seem to work properly */
+  column-width: var(--column-width, 27rem); /* this doesn't seem to work properly */
   column-gap: 4em;
   column-rule: solid 1px #ccc;
   text-align: justify;
+  background: var(--background-color, #f6ffe7);
 }
 
 .inlineUpright {
@@ -45,8 +46,4 @@ body {
 
 rt {
   line-height: 0 !important;
-}
-
-:root {
-  --column-width: 27rem; /* default column width */
 }

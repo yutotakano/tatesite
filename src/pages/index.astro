@@ -16,8 +16,11 @@ import "../styles/global.css";
 		<title>tatesite preview</title>
 	</head>
 	<body>
-		<div style="position: fixed">
+		<div style="position: fixed; top: 0">
 		column-width: <input type="number" min="0" max="40" value="27" onchange="document.documentElement.style.setProperty('--column-width', this.value + 'rem');" /> rem
+		</div>
+		<div style="position: fixed; top: 3rem">
+		background color: <input type="color" value="#f6ffe7" onchange="document.documentElement.style.setProperty('--background-color', this.value);" />
 		</div>
 		<div class="verticalContainer" set:html={index.compiledContent()} />
 	</body>
