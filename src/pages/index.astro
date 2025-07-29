@@ -15,7 +15,10 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>tatesite preview</title>
 	</head>
-	<body style="display: flex; flex-direction: column">
+	<body>
+		<div style="position: fixed">
+		column-width: <input type="number" min="0" max="40" value="27" onchange="document.documentElement.style.setProperty('--column-width', this.value + 'rem');" /> rem
+		</div>
 		<div class="verticalContainer" set:html={index.compiledContent()} />
 	</body>
 </html>
