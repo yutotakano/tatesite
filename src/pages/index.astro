@@ -1,6 +1,6 @@
 ---
-import styles from "./index.module.css";
 import * as index from "../content/index.md";
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -10,12 +10,12 @@ import * as index from "../content/index.md";
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/global.css" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>tatesite preview</title>
 	</head>
 	<body style="display: flex; flex-direction: column">
-		<h1>tatesite: A demonstration of in-browser vertical text</h1>
-		<div class={styles.verticalContainer} set:html={index.compiledContent()} />
+		<div class="verticalContainer" set:html={index.compiledContent()} />
 	</body>
 </html>
