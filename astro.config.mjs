@@ -15,4 +15,6 @@ export default defineConfig({
   markdown: {
     rehypePlugins: [verticalMarkdownPlugin]
   },
+  site: 'https://yutotakano.github.io',
+  base: 'tatesite',
 });
